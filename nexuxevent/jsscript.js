@@ -1,0 +1,1 @@
+console.log("Nexux Event Loaded");
