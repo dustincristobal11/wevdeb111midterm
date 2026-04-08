@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Reservation</h1>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+</header>
+
+<div class="form-container">
+    <h2>Book a Room</h2>
+
+    <form id="bookingForm">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+
+        <select required>
+            <option value="">Select Room</option>
+            <option>Deluxe Room</option>
+            <option>Suite Room</option>
+            <option>Family Room</option>
+        </select>
+
+        <input type="date" required>
+        <input type="date" required>
+
+        <button type="submit">Reserve Now</button>
+    </form>
+
+    <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
