@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Payroll System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .result {
+            margin-top: 15px;
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Payroll Calculator</h2>
+
+    <input type="text" id="name" placeholder="Employee Name">
+    <input type="number" id="hours" placeholder="Hours Worked">
+    <input type="number" id="rate" placeholder="Hourly Rate">
+    <input type="number" id="deduction" placeholder="Deductions">
+
+    <button onclick="calculatePayroll()">Calculate</button>
+
+    <div class="result" id="output"></div>
+</div>
+
+<script>
+function calculatePayroll() {
+    let name = document.getElementById("name").value;
+    let hours = parseFloat(document.getElementById("hours").value);
+    let rate = parseFloat(document.getElementById("rate").value);
+    let deduction = parseFloat(document.getElementById("deduction").value) || 0;
+
+    if (!name || isNaN(hours) || isNaN(rate)) {
+        document.getElementById("output").innerHTML = "Please fill all required fields.";
+        return;
+    }
+
+    let grossPay = hours * rate;
+    let netPay = grossPay - deduction;
+
+    document.getElementById("output").innerHTML = `
+        <strong>Employee:</strong> ${name} <br>
+        <strong>Gross Pay:</strong> ${grossPay.toFixed(2)} <br>
+        <strong>Deductions:</strong> ${deduction.toFixed(2)} <br>
+        <strong>Net Pay:</strong> ${netPay.toFixed(2)}
+    `;
+}
+</script>
+
+</body>
+</html>
