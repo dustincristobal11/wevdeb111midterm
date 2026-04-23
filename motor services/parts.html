@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Parts - Motor Shop</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+        }
+
+        header {
+            background: #000;
+            color: #00ffcc;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #111;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00ffcc;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        button {
+            background: #00ffcc;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #00ccaa;
+        }
+
+        footer {
+            background: #000;
+            color: #00ffcc;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Motor Shop Parts</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Motor Services</a>
+    <a href="parts.html">Parts</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h1>Available Motor Parts</h1>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="Engine oil.jpg" alt="Engine Oil">
+            <h3>Engine Oil</h3>
+            <p class="price">$20</p>
+            <button>Buy</button>
+        </div>
+
+        <div class="card">
+            <img src="Brake Pads.jpg" alt="Brake Pads">
+            <h3>Brake Pads</h3>
+            <p class="price">$35</p>
+            <button>Buy</button>
+        </div>
+
+        <div class="card">
+            <img src="Spark Plug.jpg" alt="Spark Plug">
+            <h3>Spark Plug</h3>
+            <p class="price">$10</p>
+            <button>Buy</button>
+        </div>
+
+        <div class="card">
+            <img src="Air Filter.jpg" alt="Air Filter">
+            <h3>Air Filter</h3>
+            <p class="price">$15</p>
+            <button>Buy</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Motor Shop</p>
+</footer>
+
+</body>
+</html>
