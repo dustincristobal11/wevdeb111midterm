@@ -1,130 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>User Panel - Motor Shop</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-}
-
-/* Sidebar */
-.sidebar {
-    width: 230px;
-    height: 100vh;
-    background: #111;
-    position: fixed;
-    padding-top: 20px;
-}
-
-.sidebar h2 {
-    color: #00ffcc;
-    text-align: center;
-}
-
-.sidebar a {
-    display: block;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-}
-
-.sidebar a:hover {
-    background: #00ffcc;
-    color: black;
-}
-
-/* Main */
-.main {
-    margin-left: 230px;
-    padding: 20px;
-}
-
-.header {
-    background: black;
-    color: #00ffcc;
-    padding: 15px;
-    text-align: center;
-    border-radius: 8px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-input, textarea {
-    width: 95%;
-    padding: 10px;
-    margin: 8px 0;
-}
-
-button {
-    padding: 10px;
-    background: #00ffcc;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background: orange;
-}
-</style>
-
+  <title>User</title>
+  <link rel="stylesheet" href="auth.css">
 </head>
 <body>
 
-<!-- SIDEBAR -->
-<div class="sidebar">
-    <h2>USER</h2>
-    <a href="#dashboard">📊 Dashboard</a>
-    <a href="#service">🔧 Service</a>
-    <a href="#feedback">💬 Feedback</a>
-    <a href="index.html">🚪 Logout</a>
+<div class="container">
+  <h2>User Dashboard</h2>
+  <p>Welcome User!</p>
+
+  <button onclick="logout()">Logout</button>
 </div>
 
-<!-- MAIN -->
-<div class="main">
-
-    <div class="header">
-        <h1>Motor Shop User Panel</h1>
-    </div>
-
-    <!-- DASHBOARD -->
-    <div class="card" id="dashboard">
-        <h2>📊 Dashboard</h2>
-        <p>Welcome User! View your activity here.</p>
-        <p><b>Booked Services:</b> 2</p>
-        <p><b>Pending Requests:</b> 1</p>
-    </div>
-
-    <!-- SERVICE -->
-    <div class="card" id="service">
-        <h2>🔧 Service Request</h2>
-
-        <input type="text" placeholder="Your Name">
-        <input type="text" placeholder="Vehicle Type">
-        <textarea rows="4" placeholder="Describe your problem"></textarea>
-
-        <button>Submit Request</button>
-    </div>
-
-    <!-- FEEDBACK -->
-    <div class="card" id="feedback">
-        <h2>💬 Feedback</h2>
-
-        <textarea rows="4" placeholder="Write your feedback"></textarea>
-        <button>Send Feedback</button>
-    </div>
-
-</div>
-
+<script src="script.js"></script>
 </body>
 </html>

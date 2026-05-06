@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #111;
+  padding: 15px 30px;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.btn-login {
+  background: #e63946;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+  background: url('https://images.unsplash.com/photo-1558981806-ec527fa84c39') no-repeat center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  color: white;
+}
+
+.hero-text {
+  max-width: 500px;
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: #e63946;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* SERVICES */
+.services {
+  padding: 50px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.service {
+  background: white;
+  padding: 20px;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* WHY */
+.why {
+  background: #222;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.why-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+/* ABOUT HERO */
+.about-hero {
+  background: url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2') no-repeat center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.about-text {
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  padding: 40px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+/* MISSION & VISION */
+.mission-vision {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.box {
+  width: 300px;
+  padding: 20px;
+  background: #222;
+  color: white;
+  border-radius: 10px;
+}
+
+/* TEAM */
+.team {
+  padding: 40px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.member {
+  background: white;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}/* SERVICES HERO */
+.services-hero {
+  background: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537') no-repeat center/cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.services-text {
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* SERVICES GRID */
+.services-section {
+  padding: 50px;
+  background: #f4f4f4;
+}
+
+.service-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box {
+  background: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* PRICING */
+.pricing {
+  padding: 50px;
+  background: #222;
+  color: white;
+  text-align: center;
+}
+
+.price-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.price {
+  background: #333;
+  padding: 20px;
+  width: 220px;
+  border-radius: 10px;
+}
+
+.price ul {
+  list-style: none;
+  margin-top: 10px;
+}
+/* CONTACT HERO (improved overlay) */
+.contact-hero {
+  background: url('https://images.unsplash.com/photo-1517524206127-48bbd363f3d7') no-repeat center/cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.contact-hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  top: 0;
+  left: 0;
+}
+
+.contact-text {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.contact-text h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 60px 20px;
+  background: #111;
+}
+
+.contact-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* FORM (glass effect) */
+.contact-form {
+  background: #1c1c1c;
+  padding: 25px;
+  width: 320px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.contact-form h2 {
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+/* BUTTON */
+.contact-form button {
+  background: #e63946;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #ff4d5a;
+}
+
+/* INFO BOX (highlighted) */
+.contact-info {
+  background: linear-gradient(135deg, #e63946, #b71c1c);
+  color: white;
+  padding: 25px;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.contact-info h2 {
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+/* MAP */
+.map {
+  padding: 50px;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.map iframe {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
