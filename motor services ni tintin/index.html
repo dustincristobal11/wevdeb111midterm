@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MotorCare Garage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">🏍️ MotorCare Garage</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="btn-login">Login</a>
+	<a href="#" onclick="logout()" class="btn-login">Logout</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Professional Motorcycle Services</h1>
+    <p>Reliable repairs, tune-ups, engine diagnostics, and premium parts for your motorcycle.</p>
+
+    <div class="hero-buttons">
+      <a href="products.html" class="btn-primary">View Services</a>
+      <a href="contact.html" class="btn-outline">Book Appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>Our Services</h2>
+
+  <div class="service-cards">
+    <div class="service">
+      <h3>🔧 Engine Repair</h3>
+      <p>Complete engine diagnostics and repair by expert mechanics.</p>
+    </div>
+
+    <div class="service">
+      <h3>🛢️ Oil Change</h3>
+      <p>High-quality oil replacement for better engine performance.</p>
+    </div>
+
+    <div class="service">
+      <h3>⚙️ Tune-Up</h3>
+      <p>Full motorcycle tune-up to keep your ride smooth and efficient.</p>
+    </div>
+
+    <div class="service">
+     <h3>⚙️Tire Services</h3>
+<p>Tire replacement, balancing, and alignment services.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why">
+  <h2>Why Choose Us?</h2>
+
+  <div class="why-container">
+    <div>
+      <h3>✔ Experienced Mechanics</h3>
+      <p>Skilled professionals with years of experience.</p>
+    </div>
+
+    <div>
+      <h3>✔ Affordable Pricing</h3>
+      <p>Quality service without breaking your budget.</p>
+    </div>
+
+    <div>
+      <h3>✔ Fast Service</h3>
+      <p>Quick turnaround time for all repairs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 MotorCare Garage | All Rights Reserved</p>
+</footer>
+
+</body>
+<script>
+  let isLoggedIn = localStorage.getItem("loggedIn");
+
+  if (isLoggedIn !== "true") {
+    window.location.href = "login.html"; // 👉 balik login
+  }
+</script>
+</html>
